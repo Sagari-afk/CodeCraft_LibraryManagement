@@ -1,0 +1,108 @@
+﻿<Window x:Class="LibraryManagementWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:models="clr-namespace:LibraryManagement.Models;assembly=LibraryManagement"
+        Title="Library Management" Height="700" Width="900">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Books">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <StackPanel Orientation="Horizontal" Margin="10">
+                        <Button Name="AddBookButton" Content="Add Book" Margin="5" Click="AddBookButton_Click"/>
+                        <Button Name="RemoveBookButton" Content="Remove Book" Margin="5" Click="RemoveBookButton_Click"/>
+                        <Button Name="SearchBooksButton" Content="Search Books" Margin="5" Click="SearchBooksButton_Click"/>
+                        <Button Name="RefreshBooksButton" Content="Refresh" Margin="5" Click="RefreshBooksButton_Click"/>
+                    </StackPanel>
+                    <DataGrid Name="BooksDataGrid" Grid.Row="1" Margin="10" AutoGenerateColumns="False" IsReadOnly="True" SelectionChanged="BooksDataGrid_SelectionChanged">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="Auto"/>
+                            <DataGridTextColumn Header="Title" Binding="{Binding Title}" Width="*"/>
+                            <DataGridTextColumn Header="Author" Binding="{Binding Author}" Width="*"/>
+                            <DataGridTextColumn Header="ISBN" Binding="{Binding ISBN}" Width="Auto"/>
+                            <DataGridTextColumn Header="Year" Binding="{Binding Year}" Width="Auto"/>
+                            <DataGridTextColumn Header="Copies" Binding="{Binding AvailableCopies}" Width="Auto"/>
+                            <DataGridTextColumn Header="Category" Binding="{Binding Category}" Width="Auto"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="Users">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <StackPanel Orientation="Horizontal" Margin="10">
+                        <Button Name="AddUserButton" Content="Add User" Margin="5" Click="AddUserButton_Click"/>
+                        <Button Name="RemoveUserButton" Content="Remove User" Margin="5" Click="RemoveUserButton_Click"/>
+                        <Button Name="SearchUserButton" Content="Search User" Margin="5" Click="SearchUserButton_Click"/>
+                        <Button Name="RefreshUsersButton" Content="Refresh" Margin="5" Click="RefreshUsersButton_Click"/>
+                    </StackPanel>
+                    <DataGrid Name="UsersDataGrid" Grid.Row="1" Margin="10" AutoGenerateColumns="False" IsReadOnly="True">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="Auto"/>
+                            <DataGridTextColumn Header="First Name" Binding="{Binding FirstName}" Width="*"/>
+                            <DataGridTextColumn Header="Last Name" Binding="{Binding LastName}" Width="*"/>
+                            <DataGridTextColumn Header="Email" Binding="{Binding Email}" Width="*"/>
+                            <DataGridTextColumn Header="Phone" Binding="{Binding Phone}" Width="*"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+
+            <!-- Loans Tab -->
+            <TabItem Header="Loans">
+                <Grid Margin="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <!-- Rent Book -->
+                        <RowDefinition Height="Auto"/>
+                        <!-- Return Book -->
+                        <RowDefinition Height="*"/>
+                        <!-- Active Loans List -->
+                    </Grid.RowDefinitions>
+
+                    <!-- Rent a Book Section -->
+                    <GroupBox Header="Rent a Book" Margin="5">
+                        <StackPanel Orientation="Horizontal" Margin="5" VerticalAlignment="Center">
+                            <Label Content="Reader:" VerticalAlignment="Center"/>
+                            <ComboBox Name="LoanReaderComboBox" Width="150" Margin="5" DisplayMemberPath="FirstName"/>
+                            <Label Content="Book:" VerticalAlignment="Center"/>
+                            <ComboBox Name="LoanBookComboBox" Width="150" Margin="5" DisplayMemberPath="Title"/>
+                            <Label Content="Days:" VerticalAlignment="Center"/>
+                            <TextBox Name="LoanDaysTextBox" Width="50" Margin="5" Text="14"/>
+                            <Button Content="Rent Book" Margin="5" Click="RentBookButton_Click"/>
+                        </StackPanel>
+                    </GroupBox>
+
+                    <!-- Return a Book Section -->
+                    <GroupBox Header="Return a Book" Margin="5" Grid.Row="1">
+                        <StackPanel Orientation="Horizontal" Margin="5" VerticalAlignment="Center">
+                            <Label Content="Select Loan:" VerticalAlignment="Center"/>
+                            <ComboBox Name="ReturnLoanComboBox" Width="300" Margin="5" DisplayMemberPath="Id"/>
+                            <Button Content="Return Book" Margin="5" Click="ReturnBookButton_Click"/>
+                        </StackPanel>
+                    </GroupBox>
+
+                    <!-- Active Loans List Section -->
+                    <GroupBox Header="Active Loans" Margin="5" Grid.Row="2">
+                        <DataGrid Name="ActiveLoansDataGrid" AutoGenerateColumns="False" IsReadOnly="True" Margin="5">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Loan ID" Binding="{Binding Id}" Width="Auto"/>
+                                <DataGridTextColumn Header="Book Title" Binding="{Binding Book.Title}" Width="*"/>
+                                <DataGridTextColumn Header="Reader" Binding="{Binding Reader.FirstName}" Width="Auto"/>
+                                <DataGridTextColumn Header="Loan Date" Binding="{Binding LoanDate, StringFormat=d}" Width="Auto"/>
+                                <DataGridTextColumn Header="Expected Return" Binding="{Binding ExpectedReturnDate, StringFormat=d}" Width="Auto"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </GroupBox>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
