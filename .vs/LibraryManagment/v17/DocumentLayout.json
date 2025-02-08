@@ -1,50 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\CodeCraft\\LibraryManagement\\LibraryManagment\\",
+  "WorkspaceRootPath": "D:\\CodeCraft\\LibraryManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9A7949CD-09CD-4C98-B032-FD6AF7112AB4}|LibraryManagment\\LibraryManagment.csproj|d:\\codecraft\\librarymanagement\\librarymanagment\\librarymanagment\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{9A7949CD-09CD-4C98-B032-FD6AF7112AB4}|LibraryManagment\\LibraryManagment.csproj|solutionrelative:librarymanagment\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A7949CD-09CD-4C98-B032-FD6AF7112AB4}|LibraryManagment\\LibraryManagment.csproj|d:\\codecraft\\librarymanagement\\librarymanagment\\librarymanagment\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9A7949CD-09CD-4C98-B032-FD6AF7112AB4}|LibraryManagment\\LibraryManagment.csproj|d:\\codecraft\\librarymanagement\\librarymanagment\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9A7949CD-09CD-4C98-B032-FD6AF7112AB4}|LibraryManagment\\LibraryManagment.csproj|solutionrelative:librarymanagment\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9A7949CD-09CD-4C98-B032-FD6AF7112AB4}|LibraryManagment\\LibraryManagment.csproj|d:\\codecraft\\librarymanagement\\librarymanagment\\librarymanagment\\adduserwindow.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{9A7949CD-09CD-4C98-B032-FD6AF7112AB4}|LibraryManagment\\LibraryManagment.csproj|solutionrelative:librarymanagment\\adduserwindow.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{9A7949CD-09CD-4C98-B032-FD6AF7112AB4}|LibraryManagment\\LibraryManagment.csproj|d:\\codecraft\\librarymanagement\\librarymanagment\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9A7949CD-09CD-4C98-B032-FD6AF7112AB4}|LibraryManagment\\LibraryManagment.csproj|solutionrelative:librarymanagment\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9A7949CD-09CD-4C98-B032-FD6AF7112AB4}|LibraryManagment\\LibraryManagment.csproj|d:\\codecraft\\librarymanagement\\librarymanagment\\librarymanagment\\addbookwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A7949CD-09CD-4C98-B032-FD6AF7112AB4}|LibraryManagment\\LibraryManagment.csproj|solutionrelative:librarymanagment\\addbookwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9A7949CD-09CD-4C98-B032-FD6AF7112AB4}|LibraryManagment\\LibraryManagment.csproj|d:\\codecraft\\librarymanagement\\librarymanagment\\adduserwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9A7949CD-09CD-4C98-B032-FD6AF7112AB4}|LibraryManagment\\LibraryManagment.csproj|solutionrelative:librarymanagment\\adduserwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9A7949CD-09CD-4C98-B032-FD6AF7112AB4}|LibraryManagment\\LibraryManagment.csproj|d:\\codecraft\\librarymanagement\\librarymanagment\\librarymanagment\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{9A7949CD-09CD-4C98-B032-FD6AF7112AB4}|LibraryManagment\\LibraryManagment.csproj|solutionrelative:librarymanagment\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A7949CD-09CD-4C98-B032-FD6AF7112AB4}|LibraryManagment\\LibraryManagment.csproj|d:\\codecraft\\librarymanagement\\librarymanagment\\librarymanagment\\addbookwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{9A7949CD-09CD-4C98-B032-FD6AF7112AB4}|LibraryManagment\\LibraryManagment.csproj|solutionrelative:librarymanagment\\addbookwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A7949CD-09CD-4C98-B032-FD6AF7112AB4}|LibraryManagment\\LibraryManagment.csproj|d:\\codecraft\\librarymanagement\\librarymanagment\\librarymanagment\\addbookwindow.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{9A7949CD-09CD-4C98-B032-FD6AF7112AB4}|LibraryManagment\\LibraryManagment.csproj|solutionrelative:librarymanagment\\addbookwindow.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A7949CD-09CD-4C98-B032-FD6AF7112AB4}|LibraryManagment\\LibraryManagment.csproj|d:\\codecraft\\librarymanagement\\librarymanagment\\librarymanagment\\models\\loan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A7949CD-09CD-4C98-B032-FD6AF7112AB4}|LibraryManagment\\LibraryManagment.csproj|solutionrelative:librarymanagment\\models\\loan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A7949CD-09CD-4C98-B032-FD6AF7112AB4}|LibraryManagment\\LibraryManagment.csproj|d:\\codecraft\\librarymanagement\\librarymanagment\\librarymanagment\\models\\bookcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A7949CD-09CD-4C98-B032-FD6AF7112AB4}|LibraryManagment\\LibraryManagment.csproj|solutionrelative:librarymanagment\\models\\bookcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A7949CD-09CD-4C98-B032-FD6AF7112AB4}|LibraryManagment\\LibraryManagment.csproj|d:\\codecraft\\librarymanagement\\librarymanagment\\librarymanagment\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A7949CD-09CD-4C98-B032-FD6AF7112AB4}|LibraryManagment\\LibraryManagment.csproj|solutionrelative:librarymanagment\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A7949CD-09CD-4C98-B032-FD6AF7112AB4}|LibraryManagment\\LibraryManagment.csproj|d:\\codecraft\\librarymanagement\\librarymanagment\\librarymanagment\\models\\reader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A7949CD-09CD-4C98-B032-FD6AF7112AB4}|LibraryManagment\\LibraryManagment.csproj|solutionrelative:librarymanagment\\models\\reader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9A7949CD-09CD-4C98-B032-FD6AF7112AB4}|LibraryManagment\\LibraryManagment.csproj|d:\\codecraft\\librarymanagement\\librarymanagment\\adduserwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A7949CD-09CD-4C98-B032-FD6AF7112AB4}|LibraryManagment\\LibraryManagment.csproj|solutionrelative:librarymanagment\\adduserwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,146 +26,57 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AddBookWindow.xaml",
-              "DocumentMoniker": "D:\\CodeCraft\\LibraryManagement\\LibraryManagment\\LibraryManagment\\AddBookWindow.xaml",
-              "RelativeDocumentMoniker": "LibraryManagment\\AddBookWindow.xaml",
-              "ToolTip": "D:\\CodeCraft\\LibraryManagement\\LibraryManagment\\LibraryManagment\\AddBookWindow.xaml",
-              "RelativeToolTip": "LibraryManagment\\AddBookWindow.xaml",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\CodeCraft\\LibraryManagement\\LibraryManagment\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "LibraryManagment\\MainWindow.xaml",
+              "ToolTip": "D:\\CodeCraft\\LibraryManagement\\LibraryManagment\\MainWindow.xaml",
+              "RelativeToolTip": "LibraryManagment\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-08T10:09:26.736Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AddBookWindow.xaml",
-              "DocumentMoniker": "D:\\CodeCraft\\LibraryManagement\\LibraryManagment\\LibraryManagment\\AddBookWindow.xaml",
-              "RelativeDocumentMoniker": "LibraryManagment\\AddBookWindow.xaml",
-              "ToolTip": "D:\\CodeCraft\\LibraryManagement\\LibraryManagment\\LibraryManagment\\AddBookWindow.xaml",
-              "RelativeToolTip": "LibraryManagment\\AddBookWindow.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-08T10:09:12.651Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Loan.cs",
-              "DocumentMoniker": "D:\\CodeCraft\\LibraryManagement\\LibraryManagment\\LibraryManagment\\models\\Loan.cs",
-              "RelativeDocumentMoniker": "LibraryManagment\\models\\Loan.cs",
-              "ToolTip": "D:\\CodeCraft\\LibraryManagement\\LibraryManagment\\LibraryManagment\\models\\Loan.cs",
-              "RelativeToolTip": "LibraryManagment\\models\\Loan.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T09:26:35.81Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "BookCategory.cs",
-              "DocumentMoniker": "D:\\CodeCraft\\LibraryManagement\\LibraryManagment\\LibraryManagment\\models\\BookCategory.cs",
-              "RelativeDocumentMoniker": "LibraryManagment\\models\\BookCategory.cs",
-              "ToolTip": "D:\\CodeCraft\\LibraryManagement\\LibraryManagment\\LibraryManagment\\models\\BookCategory.cs",
-              "RelativeToolTip": "LibraryManagment\\models\\BookCategory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T09:24:48.746Z",
+              "WhenOpened": "2025-02-08T12:37:03.248Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "AddBookWindow.xaml.cs",
-              "DocumentMoniker": "D:\\CodeCraft\\LibraryManagement\\LibraryManagment\\LibraryManagment\\AddBookWindow.xaml.cs",
-              "RelativeDocumentMoniker": "LibraryManagment\\AddBookWindow.xaml.cs",
-              "ToolTip": "D:\\CodeCraft\\LibraryManagement\\LibraryManagment\\LibraryManagment\\AddBookWindow.xaml.cs",
-              "RelativeToolTip": "LibraryManagment\\AddBookWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAANAAAAAAAAAA==",
+              "Title": "AddUserWindow.xaml.cs",
+              "DocumentMoniker": "D:\\CodeCraft\\LibraryManagement\\LibraryManagment\\AddUserWindow.xaml.cs",
+              "RelativeDocumentMoniker": "LibraryManagment\\AddUserWindow.xaml.cs",
+              "ToolTip": "D:\\CodeCraft\\LibraryManagement\\LibraryManagment\\AddUserWindow.xaml.cs",
+              "RelativeToolTip": "LibraryManagment\\AddUserWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T18:39:40.167Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "D:\\CodeCraft\\LibraryManagement\\LibraryManagment\\LibraryManagment\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "LibraryManagment\\MainWindow.xaml",
-              "ToolTip": "D:\\CodeCraft\\LibraryManagement\\LibraryManagment\\LibraryManagment\\MainWindow.xaml",
-              "RelativeToolTip": "LibraryManagment\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-07T18:22:41.296Z",
+              "WhenOpened": "2025-02-08T18:04:38.653Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "AddUserWindow.xaml",
-              "DocumentMoniker": "D:\\CodeCraft\\LibraryManagement\\LibraryManagment\\LibraryManagment\\AddUserWindow.xaml",
+              "DocumentMoniker": "D:\\CodeCraft\\LibraryManagement\\LibraryManagment\\AddUserWindow.xaml",
               "RelativeDocumentMoniker": "LibraryManagment\\AddUserWindow.xaml",
-              "ToolTip": "D:\\CodeCraft\\LibraryManagement\\LibraryManagment\\LibraryManagment\\AddUserWindow.xaml",
+              "ToolTip": "D:\\CodeCraft\\LibraryManagement\\LibraryManagment\\AddUserWindow.xaml",
               "RelativeToolTip": "LibraryManagment\\AddUserWindow.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-08T10:10:24.403Z",
+              "WhenOpened": "2025-02-08T18:04:34.184Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "App.xaml",
-              "DocumentMoniker": "D:\\CodeCraft\\LibraryManagement\\LibraryManagment\\LibraryManagment\\App.xaml",
-              "RelativeDocumentMoniker": "LibraryManagment\\App.xaml",
-              "ToolTip": "D:\\CodeCraft\\LibraryManagement\\LibraryManagment\\LibraryManagment\\App.xaml",
-              "RelativeToolTip": "LibraryManagment\\App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-08T10:10:27.901Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "D:\\CodeCraft\\LibraryManagement\\LibraryManagment\\LibraryManagment\\MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\CodeCraft\\LibraryManagement\\LibraryManagment\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "LibraryManagment\\MainWindow.xaml.cs",
-              "ToolTip": "D:\\CodeCraft\\LibraryManagement\\LibraryManagment\\LibraryManagment\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\CodeCraft\\LibraryManagement\\LibraryManagment\\MainWindow.xaml.cs",
               "RelativeToolTip": "LibraryManagment\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAOUAAAAAAAAAAAAuwPMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAI4BAAAAAAAAAAAywKABAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T18:27:18.407Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Book.cs",
-              "DocumentMoniker": "D:\\CodeCraft\\LibraryManagement\\LibraryManagment\\LibraryManagment\\models\\Book.cs",
-              "RelativeDocumentMoniker": "LibraryManagment\\models\\Book.cs",
-              "ToolTip": "D:\\CodeCraft\\LibraryManagement\\LibraryManagment\\LibraryManagment\\models\\Book.cs",
-              "RelativeToolTip": "LibraryManagment\\models\\Book.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAQwBYAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T18:38:35.218Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Reader.cs",
-              "DocumentMoniker": "D:\\CodeCraft\\LibraryManagement\\LibraryManagment\\LibraryManagment\\models\\Reader.cs",
-              "RelativeDocumentMoniker": "LibraryManagment\\models\\Reader.cs",
-              "ToolTip": "D:\\CodeCraft\\LibraryManagement\\LibraryManagment\\LibraryManagment\\models\\Reader.cs",
-              "RelativeToolTip": "LibraryManagment\\models\\Reader.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAA1wA0AAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T09:27:01.14Z",
+              "WhenOpened": "2025-02-08T12:52:41.314Z",
               "EditorCaption": ""
             }
           ]

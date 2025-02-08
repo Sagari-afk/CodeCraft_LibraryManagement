@@ -4,6 +4,12 @@ using System.Linq;
 using System.Windows;
 using LibraryManagement.Models;
 
+using System.IO;
+using System.Text.Json;
+using Microsoft.Win32;
+
+
+
 namespace LibraryManagementWPF
 {
     public partial class MainWindow : Window
@@ -86,6 +92,69 @@ namespace LibraryManagementWPF
         {
             LoadBooks();
         }
+
+
+        private void SaveBooksToFileButton_Click(object sender, RoutedEventArgs e)
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog
+            {
+                Title = "Save Books File",
+                Filter = "JSON files (*.json)|*.json|All files (*.*)|*.*",
+                FileName = "books.json"
+            };
+
+            if (saveFileDialog.ShowDialog() == true)
+            {
+                string BooksFilePath = saveFileDialog.FileName;
+
+                try
+                {
+                    var options = new JsonSerializerOptions { WriteIndented = true };
+                    string json = JsonSerializer.Serialize(books, options);
+                    File.WriteAllText(BooksFilePath, json);
+                    MessageBox.Show("Saved! ", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error saving books: " + ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Warning);
+
+                }
+            }
+        }
+
+        private void LoadBooksFromFileButton_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog
+            {
+                Title = "Open Books File",
+                Filter = "JSON files (*.json)|*.json|All files (*.*)|*.*"
+            };
+
+            if (openFileDialog.ShowDialog() == true)
+            {
+                string filePath = openFileDialog.FileName;
+
+                try
+                {
+                    if (File.Exists(filePath))
+                    {
+                        string json = File.ReadAllText(filePath);
+                        List<Book> loadedBooks = JsonSerializer.Deserialize<List<Book>>(json);
+                        books = loadedBooks;
+                        LoadBooks();
+                        LoadLoanBooks();
+
+                        MessageBox.Show("Books loaded successfully!", "Information", MessageBoxButton.OK, MessageBoxImage.Information);
+
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error loading books: " + ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Warning);
+                }
+            }
+        }
         #endregion
 
         #region Users Management
@@ -144,6 +213,67 @@ namespace LibraryManagementWPF
         private void RefreshUsersButton_Click(object sender, RoutedEventArgs e)
         {
             LoadUsers();
+        }
+
+        private void SaveUsersToFileButton_Click(object sender, RoutedEventArgs e)
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog
+            {
+                Title = "Save Books File",
+                Filter = "JSON files (*.json)|*.json|All files (*.*)|*.*",
+                FileName = "reader.json"
+            };
+
+            if (saveFileDialog.ShowDialog() == true)
+            {
+                string ReaderFilePath = saveFileDialog.FileName;
+
+                try
+                {
+                    var options = new JsonSerializerOptions { WriteIndented = true };
+                    string json = JsonSerializer.Serialize(readers, options);
+                    File.WriteAllText(ReaderFilePath, json);
+                    MessageBox.Show("Saved! ", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error saving books: " + ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Warning);
+
+                }
+            }
+        }
+
+        private void LoadUsersFromFileButton_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog
+            {
+                Title = "Open Books File",
+                Filter = "JSON files (*.json)|*.json|All files (*.*)|*.*"
+            };
+
+            if (openFileDialog.ShowDialog() == true)
+            {
+                string filePath = openFileDialog.FileName;
+
+                try
+                {
+                    if (File.Exists(filePath))
+                    {
+                        string json = File.ReadAllText(filePath);
+                        List<Reader> loadedReader = JsonSerializer.Deserialize<List<Reader>>(json);
+                        readers = loadedReader;
+                        LoadUsers();
+                        LoadLoanReaders();
+
+                        MessageBox.Show("Books loaded successfully!", "Information", MessageBoxButton.OK, MessageBoxImage.Information);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error loading books: " + ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Warning);
+                }
+            }
         }
         #endregion
 
@@ -237,11 +367,66 @@ namespace LibraryManagementWPF
             LoadActiveLoans();
         }
 
-        #endregion
-
-        private void BooksDataGrid_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
+        private void SaveLoadsToFileButton_Click(object sender, RoutedEventArgs e)
         {
+            SaveFileDialog saveFileDialog = new SaveFileDialog
+            {
+                Title = "Save Books File",
+                Filter = "JSON files (*.json)|*.json|All files (*.*)|*.*",
+                FileName = "loans.json"
+            };
 
+            if (saveFileDialog.ShowDialog() == true)
+            {
+                string LoansFilePath = saveFileDialog.FileName;
+
+                try
+                {
+                    var options = new JsonSerializerOptions { WriteIndented = true };
+                    string json = JsonSerializer.Serialize(loans, options);
+                    File.WriteAllText(LoansFilePath, json);
+                    MessageBox.Show("Saved! ", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error saving books: " + ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Warning);
+
+                }
+            }
         }
+
+        private void LoadLoadsFromFileButton_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog
+            {
+                Title = "Open Books File",
+                Filter = "JSON files (*.json)|*.json|All files (*.*)|*.*"
+            };
+
+            if (openFileDialog.ShowDialog() == true)
+            {
+                string filePath = openFileDialog.FileName;
+
+                try
+                {
+                    if (File.Exists(filePath))
+                    {
+                        string json = File.ReadAllText(filePath);
+                        List<Loan> loadedLoans = JsonSerializer.Deserialize<List<Loan>>(json);
+                        loans = loadedLoans;
+                        LoadActiveLoans();
+
+                        MessageBox.Show("Books loaded successfully!", "Information", MessageBoxButton.OK, MessageBoxImage.Information);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error loading books: " + ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Warning);
+                }
+            }
+        }
+
+        #endregion
     }
 }

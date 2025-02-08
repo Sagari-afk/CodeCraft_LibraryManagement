@@ -1,0 +1,46 @@
+[
+  {
+    "Id": 1,
+    "Book": {
+      "Id": 1,
+      "Title": "ew",
+      "Author": "we",
+      "ISBN": "ew",
+      "Year": 3,
+      "AvailableCopies": 1,
+      "Category": 0
+    },
+    "Reader": {
+      "Id": 1,
+      "FirstName": "3",
+      "LastName": "3",
+      "Email": "33",
+      "Phone": "3"
+    },
+    "LoanDate": "2025-02-08T19:05:55.465573+01:00",
+    "ExpectedReturnDate": "2025-02-22T19:05:55.465573+01:00",
+    "ReturnDate": null
+  },
+  {
+    "Id": 2,
+    "Book": {
+      "Id": 1,
+      "Title": "ew",
+      "Author": "we",
+      "ISBN": "ew",
+      "Year": 3,
+      "AvailableCopies": 1,
+      "Category": 0
+    },
+    "Reader": {
+      "Id": 1,
+      "FirstName": "3",
+      "LastName": "3",
+      "Email": "33",
+      "Phone": "3"
+    },
+    "LoanDate": "2025-02-08T19:05:57.2164988+01:00",
+    "ExpectedReturnDate": "2025-02-22T19:05:57.2164988+01:00",
+    "ReturnDate": null
+  }
+]

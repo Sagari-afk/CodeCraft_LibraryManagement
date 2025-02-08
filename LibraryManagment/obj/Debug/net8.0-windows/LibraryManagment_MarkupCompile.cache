@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\CodeCraft\LibraryManagement\LibraryManagment\LibraryManagment\obj\Debug\net8.0-windows\
+D:\CodeCraft\LibraryManagement\LibraryManagment\obj\Debug\net8.0-windows\
 LibraryManagment
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-D:\CodeCraft\LibraryManagement\LibraryManagment\LibraryManagment\App.xaml
-31312534707
+D:\CodeCraft\LibraryManagement\LibraryManagment\App.xaml
+4-296317285
 
 10-141028170
 1981124507420
-AddBookWindow.xaml;AddUserWindow.xaml;MainWindow.xaml;
+AddBookWindow.xaml;AddUserWindow.xaml;CustomStyles.xaml;MainWindow.xaml;
 
 False
 

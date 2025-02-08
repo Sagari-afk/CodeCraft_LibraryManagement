@@ -12,14 +12,16 @@ namespace LibraryManagement.Models
         public int AvailableCopies { get; set; }
         public BookCategory Category { get; set; }
 
-        public Book(int id, string title, string author, string isbn, int year, int copies, BookCategory category)
+        public Book() { }
+
+        public Book(int id, string title, string author, string isbn, int year, int availableCopies, BookCategory category) // Pozor aby boli rovnake nazvy ako hore
         {
             Id = id;
             Title = title;
             Author = author;
             ISBN = isbn;
             Year = year;
-            AvailableCopies = copies;
+            AvailableCopies = availableCopies;
             Category = category;
         }
 

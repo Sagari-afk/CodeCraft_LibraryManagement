@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\CodeCraft\\LibraryManagement\\LibraryManagment\\LibraryManagment\\LibraryManagment.csproj",
+      "projectUniqueName": "D:\\CodeCraft\\LibraryManagement\\LibraryManagment\\LibraryManagment.csproj",
       "projectName": "LibraryManagment",
-      "projectPath": "D:\\CodeCraft\\LibraryManagement\\LibraryManagment\\LibraryManagment\\LibraryManagment.csproj",
+      "projectPath": "D:\\CodeCraft\\LibraryManagement\\LibraryManagment\\LibraryManagment.csproj",
       "packagesPath": "C:\\Users\\lergo\\.nuget\\packages\\",
-      "outputPath": "D:\\CodeCraft\\LibraryManagement\\LibraryManagment\\LibraryManagment\\obj\\",
+      "outputPath": "D:\\CodeCraft\\LibraryManagement\\LibraryManagment\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lergo\\AppData\\Roaming\\NuGet\\NuGet.Config",

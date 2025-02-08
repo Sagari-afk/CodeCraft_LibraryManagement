@@ -16,15 +16,17 @@
                         <Button Name="RemoveBookButton" Content="Remove Book" Margin="5" Click="RemoveBookButton_Click"/>
                         <Button Name="SearchBooksButton" Content="Search Books" Margin="5" Click="SearchBooksButton_Click"/>
                         <Button Name="RefreshBooksButton" Content="Refresh" Margin="5" Click="RefreshBooksButton_Click"/>
+                        <Button Name="SaveBooksToFileButton" Content="Save" Margin="5" Click="SaveBooksToFileButton_Click"/>
+                        <Button Name="LoadBooksFromFileButton" Content="Load" Margin="5" Click="LoadBooksFromFileButton_Click"/>
                     </StackPanel>
-                    <DataGrid Name="BooksDataGrid" Grid.Row="1" Margin="10" AutoGenerateColumns="False" IsReadOnly="True" SelectionChanged="BooksDataGrid_SelectionChanged">
+                    <DataGrid Name="BooksDataGrid" Grid.Row="1" Margin="10" AutoGenerateColumns="False" IsReadOnly="True">
                         <DataGrid.Columns>
                             <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="Auto"/>
                             <DataGridTextColumn Header="Title" Binding="{Binding Title}" Width="*"/>
                             <DataGridTextColumn Header="Author" Binding="{Binding Author}" Width="*"/>
                             <DataGridTextColumn Header="ISBN" Binding="{Binding ISBN}" Width="Auto"/>
                             <DataGridTextColumn Header="Year" Binding="{Binding Year}" Width="Auto"/>
-                            <DataGridTextColumn Header="Copies" Binding="{Binding AvailableCopies}" Width="Auto"/>
+                            <DataGridTextColumn Header="Copies"  Binding="{Binding AvailableCopies}" Width="Auto"/>
                             <DataGridTextColumn Header="Category" Binding="{Binding Category}" Width="Auto"/>
                         </DataGrid.Columns>
                     </DataGrid>
@@ -55,21 +57,30 @@
                 </Grid>
             </TabItem>
 
-            <!-- Loans Tab -->
             <TabItem Header="Loans">
                 <Grid Margin="10">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto"/>
-                        <!-- Rent Book -->
                         <RowDefinition Height="Auto"/>
-                        <!-- Return Book -->
+                        <RowDefinition Height="Auto"/>
                         <RowDefinition Height="*"/>
-                        <!-- Active Loans List -->
                     </Grid.RowDefinitions>
 
-                    <!-- Rent a Book Section -->
-                    <GroupBox Header="Rent a Book" Margin="5">
+                    <StackPanel Orientation="Horizontal" Margin="5" VerticalAlignment="Center">
+                        <Button Name="SaveLoadsToFileButton" Content="Save" Margin="5" Click="SaveLoadsToFileButton_Click"/>
+                        <Button Name="LoadLoadsFromFileButton" Content="Load" Margin="5" Click="LoadLoadsFromFileButton_Click"/>
+                    </StackPanel>
+
+                    <GroupBox Header="Return a Book" Margin="5" Grid.Row="2">
                         <StackPanel Orientation="Horizontal" Margin="5" VerticalAlignment="Center">
+                            <Label Content="Select Loan:" VerticalAlignment="Center"/>
+                            <ComboBox Name="ReturnLoanComboBox" Width="300" Margin="5" DisplayMemberPath="Id"/>
+                            <Button Content="Return Book" Margin="5" Click="ReturnBookButton_Click"/>
+                        </StackPanel>
+                    </GroupBox>
+                    
+                    <GroupBox Header="Rent a Book" Margin="5"  Grid.Row="1">
+                        <StackPanel Orientation="Horizontal" Margin="3" VerticalAlignment="Center">
                             <Label Content="Reader:" VerticalAlignment="Center"/>
                             <ComboBox Name="LoanReaderComboBox" Width="150" Margin="5" DisplayMemberPath="FirstName"/>
                             <Label Content="Book:" VerticalAlignment="Center"/>
@@ -80,17 +91,7 @@
                         </StackPanel>
                     </GroupBox>
 
-                    <!-- Return a Book Section -->
-                    <GroupBox Header="Return a Book" Margin="5" Grid.Row="1">
-                        <StackPanel Orientation="Horizontal" Margin="5" VerticalAlignment="Center">
-                            <Label Content="Select Loan:" VerticalAlignment="Center"/>
-                            <ComboBox Name="ReturnLoanComboBox" Width="300" Margin="5" DisplayMemberPath="Id"/>
-                            <Button Content="Return Book" Margin="5" Click="ReturnBookButton_Click"/>
-                        </StackPanel>
-                    </GroupBox>
-
-                    <!-- Active Loans List Section -->
-                    <GroupBox Header="Active Loans" Margin="5" Grid.Row="2">
+                    <GroupBox Header="Active Loans" Margin="5" Grid.Row="3">
                         <DataGrid Name="ActiveLoansDataGrid" AutoGenerateColumns="False" IsReadOnly="True" Margin="5">
                             <DataGrid.Columns>
                                 <DataGridTextColumn Header="Loan ID" Binding="{Binding Id}" Width="Auto"/>
